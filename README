@@ -1,0 +1,21 @@
+###############################################################################
+
+Serve - HTTP server in C
+
+###############################################################################
+
+Compiling and Running:
+- $ make
+- $ ./serve <port>
+
+To Test:
+- $ curl localhost:<port> -X GET -i
+- or, enter localhost:<port> in a web browser
+
+Notes:
+- supports reqeusts and responses of up to 1024 characters
+- only supports GET requests
+- currently only serves the root (index.html) file
+- currently single-threaded - cannot handle high request loads
+
+###############################################################################
